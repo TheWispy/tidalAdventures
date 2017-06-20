@@ -1,0 +1,6 @@
+d1 $ rarely (fast 2) $ sound "~ sd"
+d2 $ sound "bd ~"
+d3 $ jux (# shape 0.6) $ sound "hh hh hh hh"
+d4 $ every 4 (#gain 1)$ sound "odx*4" # gain 0.7
+d5 $ sound "arpy" # shape "<0 0.2 0.6>" # gain 0.7
+hush

@@ -1,0 +1,9 @@
+d1 $ sometimes (fast 2) $ sound "bd(2, 8)"
+d1 silence
+d2 $ sometimes (fast 4) $ sound "{ ~ tt, hh*4?}"
+d3 $ rarely (fast 2) $ sound "bass2"
+d4 $ rarely (fast 4) $ sound " ~ odx" # shape 0.7
+d5 $ sound "sd ~ sd [sd sd]" # gain (scale 0.7 1 sine)
+d6 $ striate 100 $ sound "toys:1*4" # shape 0.3 # speed 0.5 # coarse 15 # crush 3
+d7 $ every 4 (# up 1) $ sound "noise(5, 8)" # n "0" # speed 0.5 # shape 0.7 # crush 7  # coarse 4
+hush

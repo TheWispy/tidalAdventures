@@ -1,0 +1,6 @@
+d1 $ jux (striate 2) $ sometimes (# n "g c e f") $ striate 1 $ n "a c g f" # sound "supercomparator"
+d2 $ sometimes (jux (rev)) $ stack [sound "bd:1/2", sound "hh*4", sound "~ ~ odx ~"]
+d3 $ rarely (# shape 0.5) $ sometimes (fast 2) $ sound " ~ sd:1"
+d4 $ jux (fast 2) $ sometimes (jux (rev)) $ n "c2 e2 ~ c3" # sound "supersaw"
+d5 $ sound "sine"
+hush

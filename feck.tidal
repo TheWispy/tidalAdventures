@@ -1,6 +1,12 @@
-d1 $ rarely (fast 2) $ sound "~ sd"
+d1 $ fast 4 $ striate 16 $ sound "bass2"
+d1 $ silence
 d2 $ sound "bd ~"
-d3 $ jux (# shape 0.6) $ sound "hh hh hh hh"
+d2 silence
+d3 $ jux (#coarse 4) $ sound "hh hh hh hh"
+d3 silence
 d4 $ every 4 (#gain 1)$ sound "odx*4" # gain 0.7
-d5 $ sound "arpy" # shape "<0 0.2 0.6>" # gain 0.7
+d4 silence
+d5 $ sound "bass2/2"
+d5 silence
+d6 $ every 4(striate "2 4") $ sound "sine*2"
 hush

@@ -1,0 +1,36 @@
+cps 1
+
+d1 $ stack [sound "~ odx:1" # pan (scale 0.1 0.6 rand),
+    sound "hh(5,8)" # coarse 3]
+
+d1 $ stack [
+  sound "bd bd/4",
+  sound "hh(6,8)"
+  ]
+
+
+  d1 $ jux (# crush 5) $ sound "bev"
+d1 $ silence
+
+
+d2 $ fast 4 $ striate 50 $ sound "sitar" # n "1" # end 0.7 # coarse 100 # crush 5
+d2 $ stut 4 0.7 0.5 $ sound "bd sn" # shape 0.7 # coarse 5
+d2 $ silence
+
+d3 $ every 2 (fast 2) $ sound "bass2"
+d3 silence
+
+d4 $ n "1 0 1 1" # sound "sine"
+d4 $ silence
+
+d5 $ striate 10 $ sound "toys:1/2" # crush 5 |=| speed "<0.6 0.8 0.9 1.2>/2"
+d5 $ striate 10 $ sound "toys:7/2" # crush 6
+d5 silence
+
+d6 $ every 2 (|=| gain "0") $ sound "hh:2*4" # shape 0.3
+d6 $ slow 4 $ every 2 (rev) $ up "1 2 3 4" # coarse 5 # sound "rave2" # shape 0.6
+d6 silence
+
+d7 $ stack [sound "[hh*4]", sound "toy:1/4" # end 0.5]
+d7 silence
+hush

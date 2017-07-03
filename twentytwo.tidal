@@ -1,0 +1,21 @@
+d1 $ sound "sine" # decay 0.5 # resonance 0.3 # hold 0.3 # sustain 0.3 # attack 0.1
+d1 silence
+
+d2 $ sometimes (rev) $ stack[sound "bd ~ ~ [bd bd]", sound "hh(5,8)", sound "odx(3, 8)", sound "[future future] ~ ~ ~"]
+# shape 0.3 # coarse (scale 0 10 $ saw) # crush 5
+d2 silence
+d3 $ jux (fast 2) $ sound "supercomparator*4" # midinote (toScale dorian ((irand 12) + 24))
+# crush 6
+d3 silence
+d3 silence
+d4 $ striate 60 $ sound "toys:7/2" # speed 0.7 # shape 0.3 # crush 5
+d4 silence
+
+d5 silence
+ (slow 4) $ sound "supersaw*4" # midinote (toScale dorian(irand 10) + 32) # sustain 0.2
+hush
+
+d6 $ every 4 (fast 2)$ sound "bass2" # sustain 0.5 # decay 0.5 # hold 0.2 # shape 0.4
+d6 silence
+
+CHEERS :)

@@ -1,0 +1,18 @@
+d1 $ sound "crow"
+d1 silence
+d2 $ sound "bd*2"
+d2 silence
+d3 $ sound "odx(2, 8)"
+d3 silence
+d4 $ sound "hh(8, 8)"
+d4 silence
+d5 $ sometimes (# n "f3 f3")$ sound "supercomparator*2" # n "e3 e3" # crush 4
+d5 silence
+d6 $ sometimes (fast 2)$ sound "bass2"
+d6 silence
+d7 $ sometimes (fast 4)$ sound "cp/2"
+d7 silence
+d8 $ sound "odx(4,8)"
+d8 silence
+
+hush

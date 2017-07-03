@@ -1,0 +1,30 @@
+import Sound.Tidal.Chords
+
+cps (160/60/4)
+cps 1
+d1 $ every 4 (fast 2) $ sound "[sn:0(3,9) sn:0(3, 9)]"
+d1 $ e 1 8 $ sound "bd"
+d1 $ sound "sn:2*8" # speed ((scale 0.1 0.5 saw))
+d1 $ fast 2 $ sound "bd bd bd bd ~ ~"
+d1 $ sound (samples "bass2*6" (run 6)) # speed "0.5" # cut "2" # gain "0.8"
+d1 silence
+
+d1 $ slow 2 $ midinote (toScale major "[10 11 12 13]") #  s "supercomparator" # sustain "2" # decay "0.5"
+# hold "0.7"
+# attack "0.1"
+# speed "30"
+# release "0.5"
+# lfo 1
+
+d1 $ sound "sn"
+
+d1 $ sound "bd([5 3]/2,8)"
+d1 silence
+d2 $ every 4 (fast 2) $ sound "bass2([2 1]/4, 8)"
+hush
+d3 $ every 4 (slow 2) $ sound "sd*2" # n "3"
+d3 silence
+d4 $ gain "0.6 0.7 0.8 0.9" # sound "sd" # crush "4" # pan (scale 0 0.5 saw)
+d4 silence
+d5 $ sound "odx*4" # gain (scale 0.7 1 $ rand)
+d5 silence

@@ -1,0 +1,20 @@
+--Hello Twitch!
+
+cps 1
+
+d1 $ stack [sound "bd(3, 8)", sound "hh:0(3, 8)"] # shape 0.5
+d1 silence
+d2 $ striate 8 $ n "1/2" # sound "toys" # crush 5
+d2 silence
+d3 $ sound "bass2" # shape 0.6
+d3 $ jux (striate 2)$ sound "sine*2" # gain "0.7 1"
+d3 silence
+d4 $ jux (# coarse 9) $ n "c3(5, 8)" # sound "supersaw" # sustain "0.2" # coarse 6
+d4 silence
+
+d5 $ jux (# crush 5) $ slow 4 $ n "[c4, f4, g4]" # sound "supercomparator" # hold "2" # sustain "2" # decay "2"
+# crush 5
+
+d5 silence
+d6 $ jux (# pan 0.3) $ sound "future" # speed 1.1
+hush

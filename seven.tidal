@@ -1,0 +1,20 @@
+import Sound.Tidal.Chords
+import Sound.Tidal.Scales
+
+d1 $ rarely (rev) $ stack [sound "sd", sound "bass" # shape 0.5, sound "odx:1*2", sound "hh(5, 8)"]
+d1 silence
+
+d2 $ jux (# coarse 6) $ sometimes (rev) $ n "e3" # sound "supercomparator" # hold 1 # decay 0.3 # sustain 0.5
+d2 silence
+
+d3 $ sound "odx(3,8)"
+d3 silence
+
+d4 $ jux (const $ every 2 (fast 2) $ sound "bass2" # pan 0.5) $ sound "~ sine" # coarse 2
+d4 silence
+
+d5 $ jux (rev) $ sound "supercomparator*4" # midinote (toScale dorian ((irand 12) + 24))
+d5 silence
+
+d6 $ sound "bass2"
+hush

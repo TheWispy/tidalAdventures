@@ -8,8 +8,8 @@ d4 $ jux (fast 2) $ sometimes (jux (rev)) $ n "c2 e2 ~ c3" # sound "supersaw" # 
 d4 silence
 d5 $ sound "ho*2"
 d5 silence
-d6 $ n "[c8 ~]*8" # sound "supernoise"
+d6 $ n "[c8 ~]*8" # sound "supernoise" # gain 0.9
 d6 silence
-d7 $ every 4 (fast 2)$ sound "bass2" # shape 0.5
+d7 $ every 4 (fast 2)$ sound "sine" # shape 0.1 # crush 4
 d7 silence
 hush

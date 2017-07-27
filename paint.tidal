@@ -1,0 +1,14 @@
+d1 $ n "9*2" # sound "paint"
+d1 silence
+d2 $jux(rev)$ n "2(3, 8)" # sound "paint" # shape 0.7 # up "-15"
+d2 silence
+d3 $jux (rev)$ n "18(5,8)" # sound "paint" # shape 0.2 # release "0.2"
+d3 silence
+d4 $ n "27/2" # sound "paint"
+d4 $ n "37" # sound "paint"
+d4 silence
+d5 $ n "34*4" # sound "paint" # up "2 3 5 6"
+d5 silence
+d6 $ sound "hh*4" # shape 0.5
+d7 $ sound "sine"
+hush

@@ -1,0 +1,21 @@
+d1 $ sound "odx(5,8)" # shape 0.99
+d1 silence
+d1 $every 2(#gain 0)$ striate 4 $ n "9*4" # sound "paint" # gain 0.8
+d1 silence
+d2 $ every 4 (fast 2) $ n "2 ~ 2 ~" # sound "paint" # shape 0.999
+d3 $ sound "future*4" # shape 0.2
+d3 silence
+d4 $ n "18(3,8)" # sound "paint" # gain 0.9
+d4 $ striate 8 $ sound "sine"
+d4 silence
+d5 $ every 4 (#up "0")$ jux (striate 4) $ n "34" # sound "paint" # up "-5"
+d5 silence
+d6 $ sound "bass2*4" # shape 0.99
+d6 silence
+d7 $ sound "sd(8, 8)" # shape 0.4 #shape 0.99
+d7 silence
+d8 $ every 2 (#up "5")$ striate 2 $ n "a4 b4 d4 g4" # sound "supercomparator" # shape 0.999
+d8 silence
+d9 $ jux(rev)$ sound "paint(10,16)" # n 5 # shape 0.99
+d9 silence
+hush
